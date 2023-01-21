@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando JavaScript</title>
+</head>
+<body>
+
+    <script>
+        function func01 () {
+            var x = 10;
+            y = 20;
+
+            alert (x); // Local
+            alert (y); // Global
+        }
+        func01()
+
+        function func02 () {
+            y++;
+            //alert(x); // Não consigo acessar
+            alert(y); // Acessivel
+        }
+        func02()
+    </script>
+    
+</body>
+</html>
